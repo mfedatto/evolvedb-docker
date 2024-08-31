@@ -10,8 +10,8 @@ your CI/CD pipeline and manage database migrations in a standardized environment
 
 The EvolveDB Docker image allows you to run EvolveDB commands in a containerized environment,
 ensuring consistency across different development, testing, and production setups.
-This image is built on the .NET runtime and includes EvolveDB to handle your database migrations
-efficiently.
+This image is built on the .NET runtime and includes [Evolve](https://evolve-db.netlify.app/) to
+handle your database migrations efficiently.
 
 ## Docker Image
 
@@ -20,8 +20,10 @@ efficiently.
 
 ## Features
 
-* Pre-configured Environment: EvolveDB with .NET runtime in a ready-to-use Docker container.
-* Flexible Configuration: Pass environment variables to customize the behavior of EvolveDB.
+* Pre-configured Environment: [Evolve](https://evolve-db.netlify.app/) with .NET runtime in a
+  ready-to-use Docker container.
+* Flexible Configuration: Pass environment variables to customize the behavior of
+  [Evolve](https://evolve-db.netlify.app/).
 * Cross-Platform: Supports multiple architectures including x86, amd64, armv8, and arm64.
 
 ## Getting Started
