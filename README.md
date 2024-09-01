@@ -53,7 +53,7 @@ docker run --rm \
   -e DBMS="your_dbms" \
   -e COMMAND="migrate" \
   -e SCHEMA="optional_schema" \
-  -e PLACEHOLDERS="key1=value1,key2=value2" \
+  -e PLACEHOLDERS="key1=value1;key2=value2" \
   -e METADATA_TABLE="optional_metadata_table" \
   mfedatto/evolve-db
 ```
@@ -67,7 +67,7 @@ Here are the environment variables you can use to configure the EvolveDB Docker 
 * `DBMS`: The type of database system (e.g., `sqlserver`, `postgres`). (Required)
 * `COMMAND`: The EvolveDB command to execute (e.g., `migrate`). (Required)
 * `SCHEMA`: Optional schema for the database.
-* `PLACEHOLDERS`: Key-value pairs for placeholders in migration scripts. (Format: `key1=value1,key2=value2`)
+* `PLACEHOLDERS`: Key-value pairs for placeholders in migration scripts. (Format: `key1=value1;key2=value2`)
 * `METADATA_TABLE`: Optional table name for metadata tracking.
 
 ### Example
@@ -81,7 +81,7 @@ docker run --rm \
   -e DBMS="sqlserver" \
   -e COMMAND="migrate" \
   -e SCHEMA="dbo" \
-  -e PLACEHOLDERS="env=production,version=1.0" \
+  -e PLACEHOLDERS="env=production;version=1.0" \
   -e METADATA_TABLE="evolve_metadata" \
   mfedatto/evolve-db
 ```
