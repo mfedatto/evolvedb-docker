@@ -44,4 +44,4 @@ if [ -n "$METADATA_TABLE" ]; then
 fi
 
 # Execute the EvolveDB migration command with all the constructed arguments
-exec "/app/evolve_${EVOLVE_VERSION}_Linux-64bit/evolve $COMMAND $DBMS -c $CONNECTION_STRING $LOCATIONS_ARGS $SCHEMA_ARGS $PLACEHOLDERS_ARGS $METADATA_TABLE_ARG"
+/app/evolve_${EVOLVE_VERSION}_Linux-64bit/evolve $COMMAND $DBMS -c $CONNECTION_STRING $LOCATIONS_ARGS $SCHEMA_ARGS $PLACEHOLDERS_ARGS $METADATA_TABLE_ARG
